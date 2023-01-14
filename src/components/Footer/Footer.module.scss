@@ -1,0 +1,30 @@
+@import '../../assets/styles/variables';
+
+.Footer {
+  padding: 25px 0;
+}
+
+.FooterContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  color: $light-black;
+  text-align: center;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.FooterNamePart {
+  text-align: left;
+  span {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  p {
+    font-size: 13px;
+  }
+}

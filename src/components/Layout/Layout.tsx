@@ -1,25 +1,16 @@
+import { FC } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
+import { Footer, Header } from 'components';
 import styles from 'components/Layout/Layout.module.scss';
 
-export const Layout = () => {
+export const Layout: FC = () => {
   return (
     <div className={styles.LayoutWrapper}>
-      <header>
-        <ul>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="about">About</NavLink>
-          </li>
-        </ul>
-      </header>
+      <Header />
       <main>
         <Outlet />
       </main>
-      <footer>
-        <div>footer</div>
-      </footer>
+      <Footer />
     </div>
   );
 };

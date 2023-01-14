@@ -1,0 +1,29 @@
+.Header {
+  padding: 25px 0;
+}
+
+.HeaderContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HeaderLogo {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 10px;
+  img {
+    width: 60px;
+    height: 55px;
+    border-radius: 25%;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      border-radius: 50%;
+    }
+  }
+}
+
+.HeaderSubtitle {
+  font-size: 11px;
+  font-weight: 700;
+}
